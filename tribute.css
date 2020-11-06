@@ -1,0 +1,50 @@
+
+body{
+	font-family: 'Exo', sans-serif;
+	margin: auto;
+  	width: 60%;
+  	padding: 10px;
+  	background-color: lightslategray;
+  	font-size: 15px;
+}
+h1{
+	display: inline-block;
+	font-family: 'Syne Mono', monospace;
+}
+#main{
+	background-color: azure;
+	padding: 10px;
+	height: auto;
+	position: relative;
+}
+#img-div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#image, .image-bis{
+	width: 300px;
+	height: 302px;
+	border: solid 1px black;
+	box-shadow: 10px 5px 5px gray;
+}
+#img-caption, .img-caption-bis{
+	text-align: center;
+	font-style: italic;
+}
+#title, .title-bis{
+	font-size: 32px;
+}
+#tribute-info{
+	text-align: justify;
+}
+#video{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: lightslategray;
+}
+ul{
+	list-style-type: decimal;
+}
