@@ -21,12 +21,14 @@ h1{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 40px;
 }
 #image, .image-bis{
 	width: 300px;
 	height: 302px;
 	border: solid 1px black;
 	box-shadow: 10px 5px 5px gray;
+	object-fit: cover;
 }
 #img-caption, .img-caption-bis{
 	text-align: center;
@@ -43,8 +45,16 @@ h1{
 }
 a{
 	text-decoration: none;
-	color: lightslategray;
+	color: lightslategray; 
+}
+a:hover{
+	background: linear-gradient(lightsteelblue, white, lightsteelblue);
 }
 ul{
 	list-style-type: decimal;
+}
+figure:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
