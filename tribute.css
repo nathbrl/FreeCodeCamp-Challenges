@@ -1,67 +1,82 @@
-
-body{
-	font-family: 'Exo', sans-serif;
-	margin: auto;
-  	padding: 10px;
-  	width: 60%;
+body, html{
+	font-family: 'Syne Mono', monospace;
   	background-color: lightslategray;
   	font-size: 15px;
 }
-h1{
-	display: inline-block;
+h1, input{
 	font-family: 'Syne Mono', monospace;
+	text-align: center;
 }
 #main{
-	display: inline-block;
 	background-color: azure;
-	padding: 10px;
-	height: auto;
+	width: 900px;
+   	margin: auto;
 	position: relative;
+}
+#menu{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	border: solid 2px lightslategray;
+	background-color: lightsteelblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#infos, #quizz-game, #gameplay, #contact{
+	border: solid 2px lightslategray;
+	padding: 0 10px 10px 10px;
+	text-align: center;
+	background-color: azure;
 }
 #img-div{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 25px;
 }
-#image, .image-bis{
-	width: 300px;
-	height: 302px;
+ .image-bis{
+	width: 250px;
+	height: 250px;
 	border: solid 1px black;
-	box-shadow: 10px 5px 5px gray;
+	box-shadow: 10px 5px 5px lightslategray;
 	object-fit: cover;
+}
+.nier2{
+	width: 600px;
+	height: 200px;
+	border: solid 1px black;
+	box-shadow: 10px 5px 5px lightslategray;
+	object-fit: cover;
+	text-align: center;
 }
 #img-caption, .img-caption-bis{
 	text-align: center;
 	font-style: italic;
 }
-#title, .title-bis{
-	font-size: 32px;
-}
-#tribute-info{
+p,#tribute-info{
 	text-align: justify;
+	padding: 10px;
 }
 #video{
 	text-align: center;
 }
 a{
 	text-decoration: none;
-	color: lightslategray; 
+	color: lightslategray;
 }
 a:hover{
 	background: linear-gradient(lightsteelblue, white, lightsteelblue);
 }
 ul{
-	list-style-type: decimal;
+	list-style-type: circle;
 }
-figure:hover{
+form{
+	padding: 10px;
+}
+.nier:hover{
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
-@media only screen and (min-width : 320px) and (max-width : 480px){
-	body, figcaption{
-		font-family: 'Syne Mono', monospace;
-	}
+.nier1:hover{
+	border-radius: 50%;
 }
