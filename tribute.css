@@ -6,6 +6,7 @@ body, html{
 h1, input{
 	font-family: 'Syne Mono', monospace;
 	text-align: center;
+	color: lightslategray;
 }
 #main{
 	background-color: azure;
@@ -17,14 +18,13 @@ h1, input{
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	border: solid 2px lightslategray;
 	background-color: lightsteelblue;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 #infos, #quizz-game, #gameplay, #contact{
-	border: solid 2px lightslategray;
-	padding: 0 10px 10px 10px;
+	border: solid 1px lightslategray;
+	padding: 10px 10px 10px 10px;
 	text-align: center;
 	background-color: azure;
 }
