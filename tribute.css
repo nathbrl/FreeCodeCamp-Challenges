@@ -31,6 +31,7 @@ h1, input{
 #img-div{
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: center;
 }
  .image-bis{
@@ -79,4 +80,29 @@ form{
 }
 .nier1:hover{
 	border-radius: 50%;
+}
+@media only screen and (min-width: 325px) and (max-width: 480px){
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	h1{
+		color: black;
+		text-align: left;
+	}
+	header,section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		font-size: 14px;
+	}
+	p,#tribute-info, form{
+		padding: 0;
+		text-align: left;
+	}
+	img-div{
+		flex-direction: column;
+		background: linear-gradient(to left, lightslategray, azure, lightsteelblue,azure);
+		justify-content: flex-start;
+	}
 }
