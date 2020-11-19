@@ -56,16 +56,17 @@
 </head>
 <body>
 	<div id="main">
-		<header>
-			<ul id="menu">
-				<li><a href="#tribute-info" id="infos">Infos</a></li>
-				<li><a href="#quizz" id="quizz-game">Quizz</a></li>
-				<li><a href="#video" id="gameplay">Gameplay video</a></li>
-				<li><a href="#contact-me" id="contact">Contact</a></li>
-			</ul>
+		<header id="header">
+			<nav id="nav-bar">
+				<ul id="nav-link">
+					<li><a href="#tribute-info" id="infos" class="nav-link">Infos</a></li>
+					<li><a href="#quizz" id="quizz-game" class="nav-link">Quizz</a></li>
+					<li><a href="#video" id="gameplay" class="nav-link">Gameplay video</a></li>
+					<li><a href="#contact-me" id="contact" class="nav-link">Contact</a></li>
+				</ul>
+			</nav>
 		</header>
 		<section>
-			<h1>A tribute page for Nier:Automata</h1>
 			<div id="tribute-info">
 				<h1 id="title">What is Nier:Automata ?</h1>
 				<p>Nier:Automata is a 2017 action role-playing game developed by PlatinumGames and published by SquareEnix in which players take the role of combat androids from the YoRHa units across a big open world&ast;.</p>
@@ -85,12 +86,6 @@
 					<img src="nier1.jpg" alt="2B, A2 and 9S" class="image-bis nier">
 					<figcaption class="img-caption-bis">
 						from the left: 2B, A2, 9S.
-					</figcaption>
-				</figure>
-				<figure>
-					<img src="nier4.jpg" alt="2B, A2 and 9S" class="image-bis nier2">
-					<figcaption class="img-caption-bis">
-						Starting menu.
 					</figcaption>
 				</figure>
 				<figure>
@@ -121,7 +116,7 @@
 				<embed width="560" height="315" src="https://www.youtube-nocookie.com/embed/OKd3BnRJxaM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 			</div>&emsp;
 			<p id="quizz">A little quizz for those who have already done the game</p>
-			<form name="quizz">
+			<form name="quizz" id="form">
 				1. Who is the first character you play with at the begining ?
 				<ul style="margin-top: 2pt">
 	  				<li><input type="radio" name="q1" value="A2"> A2</li>
@@ -158,24 +153,25 @@
 				Correct answers:<br>
 				<textarea class="bgclr" name="solutions" rows="5" cols="50" disabled></textarea>
 			</form>
-			<p id="contact-me">e-mail me if you want to talk about the game:</p>
-			<form action="mailto:samsha87@gmail.com" method="post" id="survey-form">
+			<form action="https://www.freecodecamp.com/email-submit" method="post" id="survey-form">
+				<span id="contact-me"> e-mail me if you want to talk about the game:</span>
 				<label for="name" id="name-label"> Name:<br></label>
 				<input type="text" name="name" placeholder="name" id="name"><br>
-				<label for="email" id="email-label">E-mail:<br></label>
-				<input type="text" name="mail" placeholder="email" id="email"><br><br>
+				<label for="email">E-mail:<br></label>
+				<input type="email" name="mail" pattern="[^@]*@[^@]*" placeholder="email" id="email">
+				<input type="submit" value="Send"><br><br>
 				<div id="dropdown">
-					<label for="number" id="number-label">Age:(8-100)<br></label>
+					Age:(8-100)<br>
 					<input type="number" name="number-label" min="8" max="100">
 				</div><br>
 				<fieldset>
-  					<label for="yes-no">Have you finish the game?</label><br>
-					<input type="radio" name="yes" id="yes-no" checked>Yes
-					<input type="radio" name="no">No
+  					<p>Have you finish the game?</p><br>
+					<input type="radio" name="yes" checked>Yes
+					<input type="radio" name="yes">No
 				</fieldset><br>
 				<div id="rate">
-					<label for="number">If yes how much have you liked Nier</label>
-					<select id="number">
+					If yes how much have you liked Nier
+					<select>
 						<option value="0">0</option>
 						<option value="1">1</option>
 						<option value="1">2</option>

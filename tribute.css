@@ -6,27 +6,33 @@ body, html{
 h1, input{
 	font-family: 'Syne Mono', monospace;
 	text-align: center;
-	color: lightslategray;
+	color: black;
 }
 #main{
-	background-color: azure;
 	width: 900px;
    	margin: auto;
 	position: relative;
+	background-color: white;
 }
-#menu{
+#header{
+	width: 100%;
+	height: 250px;
+	background: url(https://i1.wp.com/m.media-amazon.com/images/S/aplus-media/vc/0eb200a1-0771-4e88-aacc-78c8c6180eaa._SR970,300_.jpg?resize=750%2C232&ssl=1.png) round;
+}
+#nav-link{
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	background-color: lightsteelblue;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 60px;
+}
+#nav-bar{
+	position: fixed;
 }
 #infos, #quizz-game, #gameplay, #contact{
 	border: solid 1px lightslategray;
-	padding: 10px 10px 10px 10px;
 	text-align: center;
-	background-color: azure;
+	color: #000;
+	padding: 0px 10px 10px 10px;
 }
 #img-div{
 	display: flex;
@@ -34,7 +40,7 @@ h1, input{
 	flex-direction: row;
 	justify-content: center;
 }
- .image-bis{
+.image-bis{
 	width: 250px;
 	height: 250px;
 	border: solid 1px black;
