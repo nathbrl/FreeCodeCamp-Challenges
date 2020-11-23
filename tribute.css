@@ -3,10 +3,25 @@ body, html{
   	background-color: lightslategray;
   	font-size: 15px;
 }
-h1, input{
+h1, 
+input, 
+#infos, 
+#gallery, 
+#quizz-game, 
+#gameplay, 
+#contact{
 	font-family: 'Syne Mono', monospace;
 	text-align: center;
 	color: black;
+	border: solid 1px black;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+h1{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 #main{
 	width: 900px;
@@ -23,16 +38,11 @@ h1, input{
 	display: flex;
 	list-style-type: none;
 	justify-content: space-around;
-	padding-bottom: 60px;
+	padding-bottom: 70px;
+	padding-top: 20px;
 }
-#nav-bar{
-	position: fixed;
-}
-#infos, #quizz-game, #gameplay, #contact{
-	border: solid 1px lightslategray;
-	text-align: center;
-	color: #000;
-	padding: 0px 10px 10px 10px;
+.nav-link{
+	padding: 10px 10px 10px 10px;
 }
 #img-div{
 	display: flex;
@@ -55,7 +65,8 @@ h1, input{
 	object-fit: cover;
 	text-align: center;
 }
-#img-caption, .img-caption-bis{
+#img-caption, 
+.img-caption-bis{
 	text-align: center;
 	font-style: italic;
 }
@@ -70,8 +81,15 @@ a{
 	text-decoration: none;
 	color: lightslategray;
 }
-a:hover{
-	background: linear-gradient(lightsteelblue, white, lightsteelblue);
+a:hover,
+h1:hover, 
+#infos:hover, 
+#gallery:hover, 
+#quizz-game:hover, 
+#gameplay:hover, 
+#contact:hover {
+	background: linear-gradient(to right, black, lightgrey, gray, black);
+	color: white;
 }
 ul{
 	list-style-type: circle;
@@ -106,9 +124,9 @@ form{
 		padding: 0;
 		text-align: left;
 	}
-	img-div{
+	.img-div{
 		flex-direction: column;
-		background: linear-gradient(to left, lightslategray, azure, lightsteelblue,azure);
+		background: linear-gradient(to right, black, lightgrey, gray, black);
 		justify-content: flex-start;
 	}
 }
